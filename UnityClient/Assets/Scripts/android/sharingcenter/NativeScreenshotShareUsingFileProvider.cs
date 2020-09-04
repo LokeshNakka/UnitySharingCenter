@@ -77,7 +77,7 @@ public class NativeScreenshotShareUsingFileProvider : MonoBehaviour
 			AndroidJavaObject fileObject = new AndroidJavaObject("java.io.File", screenShotPath);
 
             //create FileProvider class object
-			AndroidJavaClass fileProviderClass = new AndroidJavaClass("android.support.v4.content.FileProvider");
+			AndroidJavaClass fileProviderClass = new AndroidJavaClass("androidx.core.content.FileProvider");
 
 			object[] providerParams = new object[3];
 			providerParams[0] = currentActivity;
